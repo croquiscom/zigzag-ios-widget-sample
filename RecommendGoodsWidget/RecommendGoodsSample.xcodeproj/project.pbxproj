@@ -23,6 +23,8 @@
 		89C7A46E251D85E000113207 /* GoodsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7A465251D85E000113207 /* GoodsCardView.swift */; };
 		89C7A46F251D85E000113207 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7A466251D85E000113207 /* LogoView.swift */; };
 		89C7A470251D85E000113207 /* SampleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7A467251D85E000113207 /* SampleWidget.swift */; };
+		89C7A49B251DC58B00113207 /* colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89C7A49A251DC58A00113207 /* colors.xcassets */; };
+		89C7A49E251DC98800113207 /* EmptyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7A49D251DC98800113207 /* EmptyCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		89C7A466251D85E000113207 /* LogoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		89C7A467251D85E000113207 /* SampleWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleWidget.swift; sourceTree = "<group>"; };
 		89C7A468251D85E000113207 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89C7A49A251DC58A00113207 /* colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = colors.xcassets; sourceTree = "<group>"; };
+		89C7A49D251DC98800113207 /* EmptyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,7 @@
 				89C7A461251D85E000113207 /* Model */,
 				89C7A464251D85E000113207 /* View */,
 				89C7A45E251D85E000113207 /* Assets.xcassets */,
+				89C7A49A251DC58A00113207 /* colors.xcassets */,
 				89C7A468251D85E000113207 /* Info.plist */,
 			);
 			path = RecommendGoodsWidgetExtension;
@@ -177,6 +182,7 @@
 			children = (
 				89C7A465251D85E000113207 /* GoodsCardView.swift */,
 				89C7A466251D85E000113207 /* LogoView.swift */,
+				89C7A49D251DC98800113207 /* EmptyCardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -279,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89C7A469251D85E000113207 /* Assets.xcassets in Resources */,
+				89C7A49B251DC58B00113207 /* colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +311,7 @@
 				89C7A46A251D85E000113207 /* NetworkManager.swift in Sources */,
 				89C7A46E251D85E000113207 /* GoodsCardView.swift in Sources */,
 				89C7A470251D85E000113207 /* SampleWidget.swift in Sources */,
+				89C7A49E251DC98800113207 /* EmptyCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,8 +459,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"RecommendGoodsSample/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RecommendGoodsSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -461,6 +470,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.qroquis.RecommendGoodsSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -472,8 +482,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"RecommendGoodsSample/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RecommendGoodsSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -482,6 +493,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.qroquis.RecommendGoodsSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -492,7 +504,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RecommendGoodsWidgetExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -501,6 +514,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.qroquis.RecommendGoodsSample.RecommendGoodsWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -512,7 +526,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RecommendGoodsWidgetExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -521,6 +536,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.qroquis.RecommendGoodsSample.RecommendGoodsWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

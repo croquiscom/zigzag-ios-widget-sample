@@ -6,7 +6,7 @@ struct GoodsCardView: View {
     var item: GoodsItem
     var textPadding: CGFloat {
         switch family {
-        case .systemSmall:  return 16
+        case .systemSmall:  return 12
         default:            return 8
         }
     }
@@ -28,7 +28,9 @@ struct GoodsCardView: View {
                     .cornerRadius(16)
             } else {
                 Color(.lightGray)
+                    .cornerRadius(16)
                 Image("smallempty_warning_24_n")
+                    .unredacted()
             }
             VStack {
                 Spacer()
@@ -49,7 +51,12 @@ struct GoodsCardView: View {
 }
 struct GoodsCardView_Previews: PreviewProvider {
     static var previews: some View {
-        GoodsCardView(item: GoodsCardEntry.preview.items.first!)
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
+        Group {
+            GoodsCardView(item: GoodsItem.first)
+                .previewContext(WidgetPreviewContext(family: .systemSmall))
+
+            GoodsCardView(item: GoodsItem.third)
+                .previewContext(WidgetPreviewContext(family: .systemSmall))
+        }
     }
 }

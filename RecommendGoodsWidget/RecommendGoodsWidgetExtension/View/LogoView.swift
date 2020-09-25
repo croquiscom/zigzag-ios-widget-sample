@@ -12,7 +12,7 @@ struct LogoView: View {
             }
             Spacer()
         }
-        .padding(EdgeInsets(top: 16, leading: 0, bottom: 0, trailing: 16))
+        .padding(EdgeInsets(top: 12, leading: 0, bottom: 0, trailing: 12))
     }
 }
 

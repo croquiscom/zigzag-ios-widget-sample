@@ -39,7 +39,7 @@ final class NetworkManager {
             return HTTPHeaders(headers)
         }
 
-        let req = AF.request("https://api.alpha.zigzag.kr/api/2/graphql",
+        let req = AF.request("https://api.zigzag.kr/api/2/graphql",
                              method: .post,
                              parameters: param,
                              encoding: JSONEncoding.default,
@@ -53,7 +53,7 @@ final class NetworkManager {
                        let data = jsonObject["data"] as? [String: Any],
                        let pageInfo = data["page_info"] as? [String: Any],
                        let itemList = pageInfo["ui_item_list"] as? [[String: Any]] {
-                        let goodsItems = itemList.compactMap(GoodsItem.init)
+                        let goodsItems = itemList.shuffled().compactMap(GoodsItem.init)
                         completion(.success(goodsItems))
                     }
                 } catch {
