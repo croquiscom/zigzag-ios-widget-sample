@@ -58,7 +58,7 @@ final class NetworkManager {
                        let data = jsonObject["data"] as? [String: Any],
                        let pageInfo = data["page_info"] as? [String: Any],
                        let itemList = pageInfo["ui_item_list"] as? [[String: Any]] {
-                        let goodsItems = itemList.shuffled().compactMap(GoodsItem.init)
+                        let goodsItems = itemList.shuffled().prefix(20).compactMap(GoodsItem.init)
                         completion(.success(goodsItems))
                     }
                 } catch {
