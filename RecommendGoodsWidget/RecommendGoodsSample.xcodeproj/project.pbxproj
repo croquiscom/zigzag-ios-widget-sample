@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8940892B251DD72600A4B0B5 /* ConfiguableWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8940892A251DD72600A4B0B5 /* ConfiguableWidget.swift */; };
+		8940892F251DD73600A4B0B5 /* WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8940892E251DD73600A4B0B5 /* WidgetBundle.swift */; };
+		89408934251DD79100A4B0B5 /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89408933251DD79100A4B0B5 /* WidgetView.swift */; };
+		8940893B251DDBCA00A4B0B5 /* HomePageType.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8940893A251DDBCA00A4B0B5 /* HomePageType.intentdefinition */; };
+		8940893D251DDC2200A4B0B5 /* HomePageType.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8940893A251DDBCA00A4B0B5 /* HomePageType.intentdefinition */; };
 		89A784A4251B6DD400B996D8 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A784A3251B6DD400B996D8 /* WidgetKit.framework */; };
 		89A784A6251B6DD400B996D8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A784A5251B6DD400B996D8 /* SwiftUI.framework */; };
 		89A784AF251B6DD600B996D8 /* RecommendGoodsWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 89A784A1251B6DD400B996D8 /* RecommendGoodsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -22,7 +27,7 @@
 		89C7A46D251D85E000113207 /* GoodsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7A463251D85E000113207 /* GoodsItem.swift */; };
 		89C7A46E251D85E000113207 /* GoodsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7A465251D85E000113207 /* GoodsCardView.swift */; };
 		89C7A46F251D85E000113207 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7A466251D85E000113207 /* LogoView.swift */; };
-		89C7A470251D85E000113207 /* SampleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7A467251D85E000113207 /* SampleWidget.swift */; };
+		89C7A470251D85E000113207 /* DefaultWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7A467251D85E000113207 /* DefaultWidget.swift */; };
 		89C7A49B251DC58B00113207 /* colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89C7A49A251DC58A00113207 /* colors.xcassets */; };
 		89C7A49E251DC98800113207 /* EmptyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7A49D251DC98800113207 /* EmptyCardView.swift */; };
 /* End PBXBuildFile section */
@@ -62,6 +67,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8940892A251DD72600A4B0B5 /* ConfiguableWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguableWidget.swift; sourceTree = "<group>"; };
+		8940892E251DD73600A4B0B5 /* WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBundle.swift; sourceTree = "<group>"; };
+		89408933251DD79100A4B0B5 /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
+		8940893A251DDBCA00A4B0B5 /* HomePageType.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = HomePageType.intentdefinition; sourceTree = "<group>"; };
 		89A78485251B6C1C00B996D8 /* RecommendGoodsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecommendGoodsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A784A1251B6DD400B996D8 /* RecommendGoodsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RecommendGoodsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A784A3251B6DD400B996D8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -78,7 +87,7 @@
 		89C7A463251D85E000113207 /* GoodsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsItem.swift; sourceTree = "<group>"; };
 		89C7A465251D85E000113207 /* GoodsCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsCardView.swift; sourceTree = "<group>"; };
 		89C7A466251D85E000113207 /* LogoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
-		89C7A467251D85E000113207 /* SampleWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleWidget.swift; sourceTree = "<group>"; };
+		89C7A467251D85E000113207 /* DefaultWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultWidget.swift; sourceTree = "<group>"; };
 		89C7A468251D85E000113207 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89C7A49A251DC58A00113207 /* colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = colors.xcassets; sourceTree = "<group>"; };
 		89C7A49D251DC98800113207 /* EmptyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCardView.swift; sourceTree = "<group>"; };
@@ -157,12 +166,15 @@
 		89C7A45D251D85E000113207 /* RecommendGoodsWidgetExtension */ = {
 			isa = PBXGroup;
 			children = (
-				89C7A467251D85E000113207 /* SampleWidget.swift */,
+				8940892E251DD73600A4B0B5 /* WidgetBundle.swift */,
+				89C7A467251D85E000113207 /* DefaultWidget.swift */,
+				8940892A251DD72600A4B0B5 /* ConfiguableWidget.swift */,
 				89C7A461251D85E000113207 /* Model */,
 				89C7A464251D85E000113207 /* View */,
 				89C7A45E251D85E000113207 /* Assets.xcassets */,
 				89C7A49A251DC58A00113207 /* colors.xcassets */,
 				89C7A468251D85E000113207 /* Info.plist */,
+				8940893A251DDBCA00A4B0B5 /* HomePageType.intentdefinition */,
 			);
 			path = RecommendGoodsWidgetExtension;
 			sourceTree = "<group>";
@@ -183,6 +195,7 @@
 				89C7A465251D85E000113207 /* GoodsCardView.swift */,
 				89C7A466251D85E000113207 /* LogoView.swift */,
 				89C7A49D251DC98800113207 /* EmptyCardView.swift */,
+				89408933251DD79100A4B0B5 /* WidgetView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -298,6 +311,7 @@
 			files = (
 				89C7A458251D859D00113207 /* AppDelegate.swift in Sources */,
 				89C7A454251D859D00113207 /* MainViewController.swift in Sources */,
+				8940893D251DDC2200A4B0B5 /* HomePageType.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,12 +319,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8940892F251DD73600A4B0B5 /* WidgetBundle.swift in Sources */,
 				89C7A46F251D85E000113207 /* LogoView.swift in Sources */,
 				89C7A46D251D85E000113207 /* GoodsItem.swift in Sources */,
 				89C7A46C251D85E000113207 /* Entry.swift in Sources */,
+				89408934251DD79100A4B0B5 /* WidgetView.swift in Sources */,
 				89C7A46A251D85E000113207 /* NetworkManager.swift in Sources */,
 				89C7A46E251D85E000113207 /* GoodsCardView.swift in Sources */,
-				89C7A470251D85E000113207 /* SampleWidget.swift in Sources */,
+				8940892B251DD72600A4B0B5 /* ConfiguableWidget.swift in Sources */,
+				8940893B251DDBCA00A4B0B5 /* HomePageType.intentdefinition in Sources */,
+				89C7A470251D85E000113207 /* DefaultWidget.swift in Sources */,
 				89C7A49E251DC98800113207 /* EmptyCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

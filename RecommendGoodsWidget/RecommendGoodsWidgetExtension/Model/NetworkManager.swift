@@ -22,14 +22,19 @@ final class NetworkManager {
             """
     }
 
-    static var pageInfoVariables: [String: Codable] {
-        return ["page_id": "home_best"]
-    }
+    static func loadPageItems(pageId: HomePageId = .home_ad, completion: @escaping (Result<[GoodsItem], AFError>) -> Void) {
+        var variables: [String: String] {
+            switch pageId {
+            case .home_ad:      return ["page_id": "home_ad"]
+            case .home_best:    return ["page_id": "home_best"]
+            case .home_new:     return ["page_id": "home_new"]
+            default:            return ["page_id": "home_best"]
+            }
+        }
 
-    static func loadPageItems(completion: @escaping (Result<[GoodsItem], AFError>) -> Void) {
         var param: [String: Any] = [:]
         param["query"] = pageInfoQuery
-        param["variables"] = pageInfoVariables
+        param["variables"] = variables
         param["ts"] = Date().timeIntervalSince1970 * 1000
 
         var header: HTTPHeaders {
