@@ -30,6 +30,8 @@
 		89C7A470251D85E000113207 /* DefaultWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7A467251D85E000113207 /* DefaultWidget.swift */; };
 		89C7A49B251DC58B00113207 /* colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89C7A49A251DC58A00113207 /* colors.xcassets */; };
 		89C7A49E251DC98800113207 /* EmptyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7A49D251DC98800113207 /* EmptyCardView.swift */; };
+		B7BCCB26258334300056228B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BCCB25258334300056228B /* Logger.swift */; };
+		B7BCCB27258334300056228B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BCCB25258334300056228B /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,7 @@
 		89C7A468251D85E000113207 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89C7A49A251DC58A00113207 /* colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = colors.xcassets; sourceTree = "<group>"; };
 		89C7A49D251DC98800113207 /* EmptyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCardView.swift; sourceTree = "<group>"; };
+		B7BCCB25258334300056228B /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,9 +148,10 @@
 		89C7A44B251D859D00113207 /* RecommendGoodsSample */ = {
 			isa = PBXGroup;
 			children = (
-				89C7A44E251D859D00113207 /* Preview Content */,
 				89C7A452251D859D00113207 /* AppDelegate.swift */,
 				89C7A44C251D859D00113207 /* MainViewController.swift */,
+				89C7A44E251D859D00113207 /* Preview Content */,
+				B7BCCB242583341B0056228B /* Util */,
 				89C7A44D251D859D00113207 /* Assets.xcassets */,
 				89C7A450251D859D00113207 /* LaunchScreen.storyboard */,
 				89C7A453251D859D00113207 /* Info.plist */,
@@ -198,6 +202,14 @@
 				89408933251DD79100A4B0B5 /* WidgetView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B7BCCB242583341B0056228B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B7BCCB25258334300056228B /* Logger.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +324,7 @@
 				89C7A458251D859D00113207 /* AppDelegate.swift in Sources */,
 				89C7A454251D859D00113207 /* MainViewController.swift in Sources */,
 				8940893D251DDC2200A4B0B5 /* HomePageType.intentdefinition in Sources */,
+				B7BCCB26258334300056228B /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +339,7 @@
 				89408934251DD79100A4B0B5 /* WidgetView.swift in Sources */,
 				89C7A46A251D85E000113207 /* NetworkManager.swift in Sources */,
 				89C7A46E251D85E000113207 /* GoodsCardView.swift in Sources */,
+				B7BCCB27258334300056228B /* Logger.swift in Sources */,
 				8940892B251DD72600A4B0B5 /* ConfiguableWidget.swift in Sources */,
 				8940893B251DDBCA00A4B0B5 /* HomePageType.intentdefinition in Sources */,
 				89C7A470251D85E000113207 /* DefaultWidget.swift in Sources */,
