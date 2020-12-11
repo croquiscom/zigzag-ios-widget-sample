@@ -54,6 +54,12 @@
 		B7C4C15B25833A1D001679E1 /* ResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C4C14625833A1D001679E1 /* ResponseStatus.swift */; };
 		B7C4C15C25833A1D001679E1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C4C14725833A1D001679E1 /* NetworkError.swift */; };
 		B7C4C15D25833A1D001679E1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C4C14725833A1D001679E1 /* NetworkError.swift */; };
+		B7C4C16425833A51001679E1 /* GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C4C16025833A51001679E1 /* GIF.swift */; };
+		B7C4C16525833A51001679E1 /* GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C4C16025833A51001679E1 /* GIF.swift */; };
+		B7C4C16625833A51001679E1 /* ImageDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C4C16125833A51001679E1 /* ImageDataManager.swift */; };
+		B7C4C16725833A51001679E1 /* ImageDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C4C16125833A51001679E1 /* ImageDataManager.swift */; };
+		B7C4C16825833A51001679E1 /* ImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C4C16325833A51001679E1 /* ImageURL.swift */; };
+		B7C4C16925833A51001679E1 /* ImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C4C16325833A51001679E1 /* ImageURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +133,9 @@
 		B7C4C14525833A1D001679E1 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		B7C4C14625833A1D001679E1 /* ResponseStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseStatus.swift; sourceTree = "<group>"; };
 		B7C4C14725833A1D001679E1 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		B7C4C16025833A51001679E1 /* GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIF.swift; sourceTree = "<group>"; };
+		B7C4C16125833A51001679E1 /* ImageDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDataManager.swift; sourceTree = "<group>"; };
+		B7C4C16325833A51001679E1 /* ImageURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageURL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				B7BCCB25258334300056228B /* Logger.swift */,
+				B7C4C15F25833A51001679E1 /* Image */,
 				B7C4C13A25833A1D001679E1 /* Network */,
 			);
 			path = Util;
@@ -249,8 +259,8 @@
 		B7C4C13A25833A1D001679E1 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				B7C4C13B25833A1D001679E1 /* Define */,
 				B7C4C14325833A1D001679E1 /* NetworkManager.swift */,
+				B7C4C13B25833A1D001679E1 /* Define */,
 				B7C4C14425833A1D001679E1 /* Model */,
 			);
 			path = Network;
@@ -259,13 +269,13 @@
 		B7C4C13B25833A1D001679E1 /* Define */ = {
 			isa = PBXGroup;
 			children = (
-				B7C4C13C25833A1D001679E1 /* HTTPHeaderField.swift */,
-				B7C4C13D25833A1D001679E1 /* HTTPMethod.swift */,
+				B7C4C14225833A1D001679E1 /* Host.swift */,
 				B7C4C13E25833A1D001679E1 /* API.swift */,
+				B7C4C13D25833A1D001679E1 /* HTTPMethod.swift */,
+				B7C4C14125833A1D001679E1 /* HTTPStatusCode.swift */,
+				B7C4C13C25833A1D001679E1 /* HTTPHeaderField.swift */,
 				B7C4C13F25833A1D001679E1 /* HTTPHeaderValue.swift */,
 				B7C4C14025833A1D001679E1 /* URLRequestExtension.swift */,
-				B7C4C14125833A1D001679E1 /* HTTPStatusCode.swift */,
-				B7C4C14225833A1D001679E1 /* Host.swift */,
 			);
 			path = Define;
 			sourceTree = "<group>";
@@ -276,6 +286,24 @@
 				B7C4C14525833A1D001679E1 /* Response.swift */,
 				B7C4C14625833A1D001679E1 /* ResponseStatus.swift */,
 				B7C4C14725833A1D001679E1 /* NetworkError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7C4C15F25833A51001679E1 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				B7C4C16125833A51001679E1 /* ImageDataManager.swift */,
+				B7C4C16025833A51001679E1 /* GIF.swift */,
+				B7C4C16225833A51001679E1 /* Model */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		B7C4C16225833A51001679E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7C4C16325833A51001679E1 /* ImageURL.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -392,6 +420,7 @@
 				B7C4C15A25833A1D001679E1 /* ResponseStatus.swift in Sources */,
 				B7C4C15625833A1D001679E1 /* NetworkManager.swift in Sources */,
 				B7C4C15225833A1D001679E1 /* HTTPStatusCode.swift in Sources */,
+				B7C4C16825833A51001679E1 /* ImageURL.swift in Sources */,
 				B7C4C15025833A1D001679E1 /* URLRequestExtension.swift in Sources */,
 				89C7A458251D859D00113207 /* AppDelegate.swift in Sources */,
 				B7C4C14825833A1D001679E1 /* HTTPHeaderField.swift in Sources */,
@@ -399,8 +428,10 @@
 				B7C4C15825833A1D001679E1 /* Response.swift in Sources */,
 				B7C4C14A25833A1D001679E1 /* HTTPMethod.swift in Sources */,
 				B7C4C15C25833A1D001679E1 /* NetworkError.swift in Sources */,
+				B7C4C16425833A51001679E1 /* GIF.swift in Sources */,
 				89C7A454251D859D00113207 /* MainViewController.swift in Sources */,
 				8940893D251DDC2200A4B0B5 /* HomePageType.intentdefinition in Sources */,
+				B7C4C16625833A51001679E1 /* ImageDataManager.swift in Sources */,
 				B7BCCB26258334300056228B /* Logger.swift in Sources */,
 				B7C4C14E25833A1D001679E1 /* HTTPHeaderValue.swift in Sources */,
 				B7C4C14C25833A1D001679E1 /* API.swift in Sources */,
@@ -429,9 +460,12 @@
 				89C7A46E251D85E000113207 /* GoodsCardView.swift in Sources */,
 				B7BCCB27258334300056228B /* Logger.swift in Sources */,
 				B7C4C15B25833A1D001679E1 /* ResponseStatus.swift in Sources */,
+				B7C4C16525833A51001679E1 /* GIF.swift in Sources */,
 				8940892B251DD72600A4B0B5 /* ConfiguableWidget.swift in Sources */,
 				B7C4C14925833A1D001679E1 /* HTTPHeaderField.swift in Sources */,
+				B7C4C16725833A51001679E1 /* ImageDataManager.swift in Sources */,
 				8940893B251DDBCA00A4B0B5 /* HomePageType.intentdefinition in Sources */,
+				B7C4C16925833A51001679E1 /* ImageURL.swift in Sources */,
 				89C7A470251D85E000113207 /* DefaultWidget.swift in Sources */,
 				89C7A49E251DC98800113207 /* EmptyCardView.swift in Sources */,
 			);
