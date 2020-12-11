@@ -1,7 +1,7 @@
 import Foundation
 import Alamofire
 
-final class NetworkManager {
+final class WidgetNetworkManager {
     static var pageInfoQuery: String {
         return """
             query($page_id: String!) {
