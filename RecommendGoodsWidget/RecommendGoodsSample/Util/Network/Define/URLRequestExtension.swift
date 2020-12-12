@@ -30,10 +30,11 @@ extension URLRequest {
         guard let host = url.host, server.rawValue.contains(host) else { return }
         let os         = "iOS"
         let appVersion = (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String) ?? ""
+        let userAgent  = "AppName Bookshelf; OS \(os); BundleIdentifier \(Bundle.main.bundleIdentifier ?? ""); AppVersion \(appVersion); SystemVersion \(UIDevice.current.systemVersion); DeviceModel \(UIDevice.current.model);"
         
-        let userAgent = "AppName Bookshelf; OS \(os); BundleIdentifier \(Bundle.main.bundleIdentifier ?? ""); AppVersion \(appVersion); SystemVersion \(UIDevice.current.systemVersion); DeviceModel \(UIDevice.current.model);"
         setValue(userAgent, forHTTPHeaderField: HTTPHeaderField.userAgent.rawValue)
         setValue("gzip",    forHTTPHeaderField: "Accept-Encoding")
+        setValue("6.28.0",  forHTTPHeaderField: "Croquis-Client-Version")
         
         guard let systemLanguageCode = Locale.preferredLanguages.first else { return }
         setValue(systemLanguageCode, forHTTPHeaderField: "Accept-Language")

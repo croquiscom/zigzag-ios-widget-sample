@@ -69,5 +69,37 @@ final class WidgetNetworkManager {
                 completion(.failure(error))
             }
         }
+        
+        
+        /* ------------------------------------------------------------------------------------------------------------------------- */
+        /* Network Manager Sample  */
+        
+        guard let url = URL(string: "https://api.zigzag.kr/api/2/graphql") else { return }
+        
+        var request = URLRequest(httpMethod: .post, url: url)
+        request.add(value: .applicationJSON,     field: .contentType)
+        request.add(value: .applicationJsonUTF8, field: .accept)
+        
+        _ = NetworkManager.shared.request(urlRequest: request) { result in
+            var error: Error? = nil
+            
+            switch result {
+            case .success(let response):
+                guard let decodableData = response.data else {
+                    error = NetworkError(message: response.message ?? NSLocalizedString("Please check your network connection or try again.", comment: ""))
+                    return
+                }
+                
+                do {
+//                    detail = try JSONDecoder().decode(DetailResponse.self, from: decodableData)
+                    
+                } catch (let decodingError) {
+                    error = decodingError
+                }
+                
+            case .failure(let networkError):
+                error = networkError
+            }
+        }
     }
 }
