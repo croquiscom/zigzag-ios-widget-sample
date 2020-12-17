@@ -14,7 +14,7 @@ struct Provider: TimelineProvider {
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<GoodsCardEntry>) -> ()) {
-        WidgetNetworkManager.loadPageItems { result in
+        NetworkManager.loadPageItems { result in
             let currentDate = Date()
 
             switch result {
