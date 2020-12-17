@@ -15,7 +15,7 @@ struct ConfiguableWidgetProvider: IntentTimelineProvider {
     }
 
     func getTimeline(for configuration: Intent, in context: Context, completion: @escaping (Timeline<Entry>) -> Void) {
-        NetworkManager.loadPageItems(pageId: configuration.pageId) { result in
+        WidgetNetworkManager.loadPageItems(pageId: configuration.pageId) { result in
             let currentDate = Date()
 
             switch result {
