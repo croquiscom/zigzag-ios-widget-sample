@@ -1,10 +1,3 @@
-//
-//  Logger.swift
-//  Bookshelf
-//
-//  Created by Den Jo on 2020/10/19.
-//
-
 import os.log
 
 enum LogType: String {
